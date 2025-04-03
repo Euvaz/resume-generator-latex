@@ -1,17 +1,17 @@
-# TeXCV
+# Resume Generator
 
 I developed a specialized solution for version-controlling my resume, aiming to generate a unique version for each job application using a customizable template without the need to manually create a new file for each implementation. Furthermore, I sought to automate the process of delivering these templates and add linting features to ensure consistency and high-quality output.
 
-To achieve this, I created a solution that enables the creation of specific LaTeX templates that can be customized using LaTeX macros. I developed a utility, [gen.sh](https://github.com/Euvaz/TeXCV/blob/main/gen.sh), that performs effective substitution of these macros.
+To achieve this, I created a solution that enables the creation of specific LaTeX templates that can be customized using LaTeX macros. I developed a utility, [gen.sh](https://github.com/Euvaz/Resume-Generator-Latex/blob/main/gen.sh), that performs effective substitution of these macros.
 
 To ensure quality and consistency in the resume generation process, I utilized the powerful CI/CD capabilities of [GitHub Actions](https://github.com/features/actions). This allows for automatic linting of new pull requests and the automatic compilation and delivery of a new =Artifact.tar.gz= to my self-hosted MinIO instance upon pushes to the main branch.
 
 ## Overview
 
-- [Repository Structure](https://github.com/euvaz/texcv#-repository-structure)
-- [Usage](https://github.com/euvaz/texcv#usage)
-    - [Automation](https://github.com/euvaz/texcv#automation)
-    - [Manual](https://github.com/euvaz/texcv#manual)
+- [Repository Structure](https://github.com/euvaz/resume-generator-latex#-repository-structure)
+- [Usage](https://github.com/euvaz/resume-generator-latex#usage)
+    - [Automation](https://github.com/euvaz/resume-generator-latex#automation)
+    - [Manual](https://github.com/euvaz/resume-generator-latex#manual)
 
 ## 📂 Repository structure
 
