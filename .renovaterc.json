@@ -1,24 +1,18 @@
 {
-  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
-  extends: [
-    'config:recommended',
-    ':disableRateLimiting',
-    ':dependencyDashboard',
-    ':semanticCommits',
-    ':automergeDigest',
-    ':automergeBranch',
-    'github>Euvaz/TeXCV//.github/renovate/autoMerge.json5',
-    'github>Euvaz/TeXCV//.github/renovate/commitMessage.json5',
-    'github>Euvaz/TeXCV//.github/renovate/labels.json5',
-    'github>Euvaz/TeXCV//.github/renovate/semanticCommits.json5',
-    'helpers:pinGitHubActionDigests',
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    ":automergeBranch",
+    ":automergeDigest",
+    ":dependencyDashboard",
+    ":disableRateLimiting",
+    ":semanticCommits",
+    "config:recommended",
+    "github>Euvaz/resume-generator-latex//.renovate/autoMerge.json",
+    "github>Euvaz/resume-generator-latex//.renovate/commitMessage.json",
+    "github>Euvaz/resume-generator-latex//.renovate/labels.json",
+    "github>Euvaz/resume-generator-latex//.renovate/semanticCommits.json",
+    "helpers:pinGitHubActionDigests"
   ],
-  platform: 'github',
-  onboarding: false,
-  requireConfig: 'optional',
-  reviewersFromCodeOwners: false,
-  dependencyDashboardTitle: 'Renovate Dashboard',
-  suppressNotifications: [
-    'prIgnoreNotification',
-  ],
+  "dependencyDashboardTitle": "Renovate Dashboard",
+  "suppressNotifications": ["prIgnoreNotification"]
 }
