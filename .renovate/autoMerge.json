@@ -6,7 +6,7 @@
       "automerge": true,
       "ignoreTests": true,
       "automergeType": "branch",
-      "matchUpdateTypes": ["minor", "patch", "digest"],
+      "matchUpdateTypes": ["minor", "patch", "digest"]
     }
   ]
 }
