@@ -48,50 +48,35 @@
 \titleformat{\subsubsection}[runin]{\bfseries}{}{0em}{\textsf}
 
 \begin{document}
-%%%%%%%%%%%%%%%
-% Left Column %
-%%%%%%%%%%%%%%%
-\begin{minipage}[t]{0.36\textwidth}
+%%%%%%%%%%%%%%%%%%%
+% Top Left Column %
+%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.38\textwidth}
   \raggedright
   \vspace*{0pt}
-          {\bfseries\LARGE\textsf\appfirstname{}} {\bfseries\LARGE\textsf\applastname{}}
+  {\bfseries\LARGE\textsf\appfirstname{}} {\bfseries\LARGE\textsf\applastname{}}
 
-          \section{Synopsis}
-          \appsynopsis{}
+  \vspace{0.25em}
+  \appsynopsis{}
 
-          \section{Contact}
-          \vbox{
-            \halign{\tabskip=.5em
-              \vtop{\hsize=.25\textwidth\raggedright\bfseries #:}&
-              \vtop{\hsize=.75\textwidth\raggedright #}\cr
-              GitHub & \appgithuburl{}\cr
-              LinkedIn & \applinkedinurl{}\cr
-              Phone & \appcellphone{}\cr
-              Email & \appemail{}\cr
-              Address & \appaddress{}\cr
-            }
-          }
-
-          \section{Education}
-          \subsection{Degrees}
-          \textbf{AS Cybersecurity}\par
-          \textit{Rio Hondo College}\hfill May 2021 \\
-          \textit{South El Monte, CA}
-
-          \subsection{Certificates}
-          \textbf{Cloud Computing Practitioner}\par
-          \textit{Rio Hondo College}\hfill May 2021 \\
-          \textit{South El Monte, CA}
-
-          \textbf{Ethical Hacker}\par
-          \textit{Rio Hondo College}\hfill May 2021 \\
-          \textit{South El Monte, CA}
-          
+  \section{Contact}
+  \vbox{
+    \halign{\tabskip=.5em
+      \vtop{\hsize=.25\textwidth\raggedright\bfseries #:}&
+      \vtop{\hsize=.75\textwidth\raggedright #}\cr
+      Phone & \appcellphone{}\cr
+      Email & \appemail{}\cr
+      Address & \appaddress{}\cr
+      \noalign{\vskip 1em}
+      GitHub & \appgithuburl{}\cr
+      LinkedIn & \applinkedinurl{}\cr
+    }
+  }
 \end{minipage}\hfill
-%%%%%%%%%%%%%%%%
-% Right Column %
-%%%%%%%%%%%%%%%%
-\begin{minipage}[t]{0.62\textwidth}
+%%%%%%%%%%%%%%%%%%%%
+% Top Right Column %
+%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.60\textwidth}
   \raggedright
   \vspace*{0pt}
 
@@ -105,7 +90,7 @@
 
   \vspace{0.5em}
   \textbf{Systems Administrator}\par
-  \textit{Nashville Music City Center (NMCC) -- Nashville, TN}\hfill Dec 2022 -- Jul 2023
+  \textit{Nashville Music City Center -- Nashville, TN}\hfill Dec 2022 -- Jul 2023
 
   \vspace{0.5em}
   \textbf{Support Technician}\par
@@ -118,15 +103,38 @@
   \vspace{0.5em}
   \textbf{Support Specialist}\par
   \textit{GW Security, Inc. -- South El Monte, CA}\hfill Aug 2020 -- Jun 2021
-
-  \section{Projects \& Deliverables}
-  \begin{itemize}[noitemsep,nolistsep]
-    \appprojectsdeliverables{}
-  \end{itemize}
-
+\end{minipage}
+%%%%%%%%%%%%%%%%%
+% Middle Column %
+%%%%%%%%%%%%%%%%%
+\section{Projects \& Deliverables}
+\appprojectsdeliverables{}
+%%%%%%%%%%%%%%%%%%%%%%
+% Bottom Left Column %
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.60\textwidth}
+  \raggedright
   \section{Technical Skills}
   \begin{itemize}[noitemsep,nolistsep]
     \apptechnicalskills{}
   \end{itemize}
+\end{minipage}\hfill
+%%%%%%%%%%%%%%%%%%%%%%%
+% Bottom Right Column %
+%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.38\textwidth}
+  \section{Credentials}
+  \subsection{Education}
+  \textbf{AS Cybersecurity}\par
+  \textit{Rio Hondo College}\hfill May 2021 \\
+  \textit{South El Monte, CA}
+  \subsection{Certificates}
+  \textbf{Cloud Computing Practitioner}\par
+  \textit{Rio Hondo College}\hfill May 2021 \\
+  \textit{South El Monte, CA}
+
+  \textbf{Ethical Hacker}\par
+  \textit{Rio Hondo College}\hfill May 2021 \\
+  \textit{South El Monte, CA}
 \end{minipage}
 \end{document}
